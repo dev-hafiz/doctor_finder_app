@@ -29,8 +29,22 @@ const Searchbox = () => {
                     />
                     Select Location
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  <NavigationMenuContent className="flex flex-col cursor-pointer">
+                    <NavigationMenuLink className="px-4 py-2">
+                      Maharashtra
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="px-4 py-2">
+                      Tamil Nadu
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="px-4 py-2">
+                      Karnataka
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="px-4 py-2">
+                      Delhi
+                    </NavigationMenuLink>
+                    <NavigationMenuLink className="px-4 py-2">
+                      Kerala
+                    </NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
