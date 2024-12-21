@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Plus } from "lucide-react";
+import { Facebook, Instagram, Plus, Twitter, Youtube } from "lucide-react";
 
 const BioCard = () => {
   return (
@@ -29,6 +29,52 @@ const BioCard = () => {
           <p className="text-[#2b2b2b]  text-base font-medium font-sans underline leading-[27px]">
             Read More
           </p>
+        </div>
+      </div>
+
+      <div className=" px-10 lg:pb-10 pb-24  h-10  lg:flex items-center gap-2">
+        <div className="text-black text-xl lg:mb-0 mb-2 font-medium font-sans leading-tight">
+          Language Spoken{" "}
+        </div>
+        <div className="justify-start items-center gap-[15px] inline-flex">
+          <div className="w-[105px] h-10 px-[9px] py-[7px] bg-[#2e37a4]/5 rounded-2xl justify-center items-center gap-2.5 flex overflow-hidden">
+            <div className="text-[#4f4f4f] text-xl font-medium font-sans leading-tight">
+              English{" "}
+            </div>
+          </div>
+          <div className="w-[83px] h-10 px-[9px] py-[7px] bg-[#2e37a4]/5 rounded-2xl justify-center items-center gap-2.5 flex overflow-hidden">
+            <div className="text-[#4f4f4f] text-xl font-medium font-sans leading-tight">
+              Hindi
+            </div>
+          </div>
+          <div className="w-[99px] h-10 px-[9px] py-[7px] bg-[#2e37a4]/5 rounded-2xl justify-center items-center gap-2.5 flex overflow-hidden">
+            <div className="text-[#4f4f4f] text-xl font-medium font-sans leading-tight">
+              Telugu
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-10  pb-16 h-10 justify-start items-start gap-[15px] inline-flex">
+        <div className="justify-start items-start gap-2.5 flex">
+          <div className="w-10 h-10 flex justify-center items-center bg-[#f7f7fc] rounded-full border border-[#8d8d8d]">
+            <Facebook size={20} strokeWidth={0.75} />
+          </div>
+        </div>
+        <div className="justify-start items-start gap-2.5 flex">
+          <div className="w-10 h-10 flex justify-center items-center bg-[#f7f7fc] rounded-full border border-[#8d8d8d]">
+            <Instagram size={20} strokeWidth={0.75} />
+          </div>
+        </div>
+        <div className="justify-start items-start gap-2.5 flex">
+          <div className="w-10 h-10 flex justify-center items-center bg-[#f7f7fc] rounded-full border border-[#8d8d8d]">
+            <Youtube size={20} strokeWidth={0.75} />
+          </div>
+        </div>
+        <div className="justify-start items-start gap-2.5 flex">
+          <div className="w-10 h-10 flex justify-center items-center bg-[#f7f7fc] rounded-full border border-[#8d8d8d]">
+            <Twitter size={20} strokeWidth={0.75} />
+          </div>
         </div>
       </div>
     </Card>
