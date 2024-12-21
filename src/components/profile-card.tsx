@@ -29,7 +29,7 @@ function ProfileCard() {
                 Gynecologist
               </p>
             </div>
-            <div className="flex items-center  ">
+            <div className="flex items-center ">
               <span className="text-[#3A643B] font-semibold mr-1 font-sans">
                 4.2
               </span>
