@@ -13,9 +13,21 @@ body {
   height: 220px;
   object-fit: cover;
 }
+.profile-bg {
+  background-image: url("/images/profileBg.png");
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  object-fit: cover;
+}
 
 @media (min-width: 768px) {
   .bg-image {
+    height: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-bg {
     height: 220px;
   }
 }
