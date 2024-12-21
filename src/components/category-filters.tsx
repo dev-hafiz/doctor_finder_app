@@ -37,7 +37,7 @@ const CategoryFilters = () => {
 
   return (
     <main className="relative ">
-      <div className="pl-56 lg:pl-0 lg:flex  justify-center items-center gap-10 my-6 border-b-[1px] pb-5">
+      <div className="pl-56 lg:pl-0 lg:flex  justify-center items-center gap-10 my-8 border-b-[1px] pb-5">
         <div className="mb-4 lg:mb-0">
           <Select onValueChange={handleExpertiseSelect}>
             <SelectTrigger className="w-[180px] bg-gray-100 py-3">
@@ -102,7 +102,7 @@ const CategoryFilters = () => {
           </Select>
         </div>
       </div>
-      <div className=" lg:flex gap-16  mr-24 absolute right-40">
+      <div className=" lg:flex gap-16 z-10  mr-24 absolute right-40">
         {selectedExpertise && (
           <div className="bg-[#EAF2EA] py-2 px-6 mb-4 lg:mb-0 rounded-full flex items-center gap-2">
             <p className="text-base">{selectedExpertise}</p>{" "}
