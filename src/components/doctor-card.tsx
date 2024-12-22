@@ -78,19 +78,22 @@ const DoctorCard = <T extends DoctorInterface>(props: Props<T>) => {
           </div>
 
           <div className="flex flex-col w-[286px] items-center gap-[9px] relative flex-[0_0_auto]">
-            <div className="flex w-[284px] h-[42px] items-center justify-center gap-2.5 px-[78px] py-[15px] relative bg-white rounded-lg overflow-hidden border border-solid border-[#3a643b]">
-              <NextLink href={`${props?.doctor?.id}`}>
+            <NextLink href={`${props?.doctor?.id}`}>
+              {" "}
+              <div className="flex w-[284px] h-[42px] items-center justify-center gap-2.5 px-[78px] py-[15px] relative bg-white rounded-lg overflow-hidden border border-solid border-[#3a643b]">
                 <div className="relative w-fit mt-[-5.00px] mb-[-3.00px] [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-[#3a643b] text-base tracking-[-0.16px] leading-5 whitespace-nowrap">
                   View Profile
                 </div>
-              </NextLink>
-            </div>
-
-            <div className="flex w-[287px] h-[53px] items-center justify-center gap-2.5 px-[37px] py-[15px] relative ml-[-0.50px] mr-[-0.50px] bg-[#3a643b] rounded-lg overflow-hidden">
-              <div className="relative w-fit [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-white text-base tracking-[-0.16px] leading-5 whitespace-nowrap">
-                Book a consultation
               </div>
-            </div>
+            </NextLink>
+            <NextLink href={`${props?.doctor?.id}`}>
+              <div className="flex w-[287px] h-[53px] items-center justify-center gap-2.5 px-[37px] py-[15px] relative ml-[-0.50px] mr-[-0.50px] bg-[#3a643b] rounded-lg overflow-hidden">
+                {" "}
+                <div className="relative w-fit [font-family:'Nunito-SemiBold',Helvetica] font-semibold text-white text-base tracking-[-0.16px] leading-5 whitespace-nowrap">
+                  Book a consultation
+                </div>
+              </div>
+            </NextLink>
           </div>
         </div>
       </div>
