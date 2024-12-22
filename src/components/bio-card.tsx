@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { DoctorInterface } from "@/types/DoctorInterface";
 import {
   Facebook,
   Instagram,
@@ -10,7 +11,15 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-const BioCard = () => {
+interface BioCardProps {
+  doctor?: DoctorInterface;
+}
+
+const BioCard: React.FC<BioCardProps> = ({ doctor }) => {
+  if (!doctor) {
+    return <div>Doctor not found.</div>;
+  }
+
   return (
     <div>
       <Card>
@@ -30,9 +39,7 @@ const BioCard = () => {
 
         <div className="p-10  flex-col justify-start items-start gap-1.5 inline-flex">
           <div className=" text-[#333548]/50 text-base font-medium font-sans leading-[27px]">
-            Hello I am Dr. Bruce Willis a Gynaecologist in Sanjivni Hospital
-            Surat. love to work with all my hospital staff and seniour doctors.
-            Completed my graduation in Gynaecologist Medicine from the{" "}
+            {doctor.bio}
           </div>
           <div className="h-[27px] justify-start items-center gap-2.5 inline-flex">
             <div className="h-[1px] w-[550px] bg-[#c5c5c5] hidden lg:block md:block"></div>

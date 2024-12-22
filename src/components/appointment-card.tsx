@@ -8,8 +8,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "./ui/button";
+import { DoctorInterface } from "@/types/DoctorInterface";
+import React from "react";
 
-const AppointmentCard = () => {
+interface AppointmentCardProps {
+  doctor?: DoctorInterface;
+}
+const AppointmentCard: React.FC<AppointmentCardProps> = ({ doctor }) => {
   return (
     <Card className="mb-6">
       <div className="w-11/12  flex items-center justify-between px-7 mx-6 my-10 py-4  bg-white rounded-[15px] shadow-[-0.4000000059604645px_-0.4000000059604645px_2.4000000953674316px_0px_rgba(166,166,166,0.25)] border border-[#e2e2e2] ">
@@ -17,7 +22,7 @@ const AppointmentCard = () => {
           Appointment Fee
         </div>
         <div className="text-center text-[#3a643b] text-xl font-semibold font-sans ">
-          ₹699.00
+          ₹{doctor?.appointment_fee}
         </div>
       </div>
 
@@ -55,10 +60,10 @@ const AppointmentCard = () => {
             </div>
           </div>
           <div className="pl-[52px] pr-[53px] pt-5 pb-[13px] bg-white rounded-[10px] border border-neutral-200 flex-col justify-end items-center gap-1 inline-flex">
-            <div className="text-center text-[#131313] text-base font-['Gotham Rounded'] tracking-wide">
+            <div className="text-center text-[#131313] text-base font-sans tracking-wide">
               Chat
             </div>
-            <div className="text-center text-[#606060] text-base font-normal font-['Nunito'] tracking-wide">
+            <div className="text-center text-[#606060] text-base font-normal font-sans tracking-wide">
               10 Mins
             </div>
           </div>
@@ -68,9 +73,9 @@ const AppointmentCard = () => {
       <div className="mb-10 mx-8">
         <div className=" flex justify-between items-center gap-2.5 ">
           <p className="text-center text-black text-xl font-bold font-sans tracking-wide">
-            Select your mode of session
+            Pick a Time slot
           </p>
-          <div className="h-[1px] w-2/4 bg-[#e2e2e2] hidden lg:block md:block"></div>
+          <div className="h-[1px] w-3/5 bg-[#e2e2e2] hidden lg:block md:block"></div>
           <div className="h-[43px] flex-col justify-start items-start gap-2.5 inline-flex">
             <div className="w-11 h-[43px] flex justify-center items-center bg-white rounded-full border border-[#8a8a8a]">
               <CalendarDays size={20} color="#3a643b" strokeWidth={2.25} />
