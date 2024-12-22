@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Button } from "./ui/button";
 
 const AppointmentCard = () => {
   return (
@@ -141,6 +142,105 @@ const AppointmentCard = () => {
             <CarouselNext />
           </Carousel>
         </Card>
+      </div>
+
+      <div className="mb-10 mx-8">
+        <div className=" flex justify-between items-center gap-2.5 ">
+          <p className="text-center text-black text-xl font-bold font-sans tracking-wide">
+            Morning
+          </p>
+        </div>
+
+        <div className=" my-6 justify-start flex-wrap items-start gap-6 inline-flex">
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            09:00 AM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            09:30 AM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            10:00 AM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            10:15 AM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            10:30 AM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl bg-[#3A643B] text-white"
+          >
+            11:00 AM
+          </Button>
+        </div>
+      </div>
+      <div className="mb-10 mx-8">
+        <div className=" flex justify-between items-center gap-2.5 ">
+          <p className="text-center text-black text-xl font-bold font-sans tracking-wide">
+            Evening
+          </p>
+        </div>
+
+        <div className=" my-6 justify-start flex-wrap items-start gap-6 inline-flex">
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            04:00 PM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            04:30 PM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            04:45 PM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            05:00 pM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl hover:bg-[#3A643B] hover:text-white"
+          >
+            05:15 PM
+          </Button>
+          <Button
+            variant="outline"
+            className=" py-6 px-8 rounded-xl bg-[#3A643B] text-white"
+          >
+            05:30 PM
+          </Button>
+        </div>
+      </div>
+
+      <div className="mb-10 mx-8 flex justify-center items-center">
+        <Button className="bg-[#3A643B] w-full text-white hover:bg-[#2A542B] px-10 py-6 text-lg">
+          Book an Appointment
+        </Button>
       </div>
     </Card>
   );
