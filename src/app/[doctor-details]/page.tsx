@@ -1,3 +1,4 @@
+import AppointmentCard from "@/components/appointment-card";
 import BioCard from "@/components/bio-card";
 import ProfileCard from "@/components/profile-card";
 
@@ -10,10 +11,7 @@ const DetailsPage = () => {
           <BioCard />
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum
-          repellendus fugiat provident, impedit numquam ratione accusantium!
-          Dolor vero voluptate facilis consequuntur pariatur officiis,
-          voluptatibus, laudantium dolore quis possimus suscipit.
+          <AppointmentCard />
         </div>
       </div>
     </div>
