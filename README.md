@@ -1,6 +1,6 @@
 # Doctor Finder App (Next.js, Typescript and Tailwind CSS)
 
-[Livesite](https://course-management-react-frontend.vercel.app/)
+[Livesite](https://doctorhelp.vercel.app/)
 
 This is Doctor finder web application (Frontend) developed with lightweidght Next.js with TypeScript,showcasing my skills in frontend development and design with Tailwind Css and Shad-cn UI. The application converts two provided designs into fully functional web pages, closely adhering to the original designs and enhancing the user experience with smooth motion designs.
 
